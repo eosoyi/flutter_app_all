@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pruebas/TestWidgets.dart';
+import 'package:pruebas/Utils/DraggableScrollableSheetTest.dart';
 import 'package:pruebas/ejercicios/Ejercicio1.dart';
 import 'package:pruebas/ejercicios/Ejercicio2.dart';
 import 'package:pruebas/ejercicios/MenuPrincipal.dart';
@@ -14,6 +16,18 @@ import 'package:pruebas/scanner/DataQrPage.dart';
 import 'package:pruebas/scanner/Scanner.dart';
 
 void main() {
+  ErrorWidget.builder = (FlutterErrorDetails detail){
+    return Container(
+      alignment: Alignment.center,
+      child: Text(
+        'Error ${detail.exception}',
+        style: const TextStyle(
+          fontWeight: FontWeight.bold
+        ),
+        textAlign: TextAlign.center,
+      ),
+    );
+  };
   runApp(const MyApp());
 }
 
@@ -37,6 +51,10 @@ class MyApp extends StatelessWidget {
         'sign_up_login1' : (context) => const SignUp(),
         'login2' : (context) => const Login2(),
         'login2_form' : (context) => const Login2Form(),
+
+        'test_widgets' : (context) => const TestWidgets(),
+        'DraggableScrollableSheetTest' : (context) => const DraggableScrollableSheetTest(),
+
 
         // Leslie
         'otro' : (context) => const Otro(),
