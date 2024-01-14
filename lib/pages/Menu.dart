@@ -36,6 +36,10 @@ class _MenuState extends State<Menu> {
               Center(
                 child: _menuCreate('login1', 'Login 1'),
               ),
+              const SizedBox(height: 20,),
+              Center(
+                child: _menuCreate('login2', 'Login 2'),
+              ),
             ],
           ),
         ),

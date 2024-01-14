@@ -7,6 +7,8 @@ import 'package:pruebas/ejercicios/otros/OpcionesMenuTab.dart';
 import 'package:pruebas/login%201/Login.dart';
 import 'package:pruebas/login%201/Login1.dart';
 import 'package:pruebas/login%201/SignUp.dart';
+import 'package:pruebas/login_2/Login2.dart';
+import 'package:pruebas/login_2/Login2Form.dart';
 import 'package:pruebas/pages/Menu.dart';
 import 'package:pruebas/scanner/DataQrPage.dart';
 import 'package:pruebas/scanner/Scanner.dart';
@@ -33,6 +35,8 @@ class MyApp extends StatelessWidget {
         'login1' : (context) => const Login1(),
         'login1_page' : (context) => const Login(),
         'sign_up_login1' : (context) => const SignUp(),
+        'login2' : (context) => const Login2(),
+        'login2_form' : (context) => const Login2Form(),
 
         // Leslie
         'otro' : (context) => const Otro(),
